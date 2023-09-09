@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stabilt.OpenApi.FluentAssertions", "src\Stabilt.OpenApi.FluentAssertions\Stabilt.OpenApi.FluentAssertions.csproj", "{7AAD1C1D-8F4D-4E0F-8B1E-61147D43102E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{22FC317D-0E00-47C2-B42C-D2AA9FA98BDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B59F893B-AAD3-4454-B4C1-7055FE892F9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{44726905-3632-4131-A9AE-6A36C6DF4FB3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stabilt.OpenApi.FluentAssertions.Tests", "test\Stabilt.OpenApi.FluentAssertions.Tests\Stabilt.OpenApi.FluentAssertions.Tests.csproj", "{85C0DB2E-0E01-42C1-BBF1-3FE45261A608}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{C2F57BE5-94B7-4106-A914-469202743074}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{DBFC4FBC-DF98-4311-AA7D-7AB5D808FAF5}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\main.yml = .github\workflows\main.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AAD1C1D-8F4D-4E0F-8B1E-61147D43102E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AAD1C1D-8F4D-4E0F-8B1E-61147D43102E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AAD1C1D-8F4D-4E0F-8B1E-61147D43102E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AAD1C1D-8F4D-4E0F-8B1E-61147D43102E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85C0DB2E-0E01-42C1-BBF1-3FE45261A608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C0DB2E-0E01-42C1-BBF1-3FE45261A608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C0DB2E-0E01-42C1-BBF1-3FE45261A608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C0DB2E-0E01-42C1-BBF1-3FE45261A608}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AAD1C1D-8F4D-4E0F-8B1E-61147D43102E} = {22FC317D-0E00-47C2-B42C-D2AA9FA98BDE}
+		{85C0DB2E-0E01-42C1-BBF1-3FE45261A608} = {B59F893B-AAD3-4454-B4C1-7055FE892F9D}
+		{DBFC4FBC-DF98-4311-AA7D-7AB5D808FAF5} = {C2F57BE5-94B7-4106-A914-469202743074}
+	EndGlobalSection
+EndGlobal

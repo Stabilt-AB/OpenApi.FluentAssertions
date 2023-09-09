@@ -1,0 +1,31 @@
+name: publish to nuget
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    env:
+      buildConfiguration: 'Release'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up .NET 8.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+
+      - name: Build
+        run: dotnet build Stabilt.OpenApi.FluentAssertions.sln --configuration Release
+
+      - name: Test
+        run: dotnet test Stabilt.OpenApi.FluentAssertions.sln --configuration Release --no-build --collect:"Code coverage"
+
+      - name: Pack
+        run: dotnet pack src/Stabilt.OpenApi.FluentAssertions/Stabilt.OpenApi.FluentAssertions.csproj --configuration Release
+
+      - name: Push Package to NuGet.org
+        run: dotnet nuget push src/Stabilt.OpenApi.FluentAssertions/bin/Release/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_ORG_API_KEY }} --skip-duplicate --no-symbols
