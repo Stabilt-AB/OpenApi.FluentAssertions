@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stabilt.OpenApi.FluentAssertions.Tests", "test\Stabilt.OpenApi.FluentAssertions.Tests\Stabilt.OpenApi.FluentAssertions.Tests.csproj", "{85C0DB2E-0E01-42C1-BBF1-3FE45261A608}"
